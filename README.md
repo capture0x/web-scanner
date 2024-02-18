@@ -72,7 +72,7 @@ Your contributions to improve the Advanced Web Scanner are highly appreciated:
 
 ## Bugs and Enhancements
 
-For bug reports or suggestions for enhancements, please open an [issue](https://github.com/your-repo/Advanced-Web-Scanner/issues).
+For bug reports or suggestions for enhancements, please open an [issue](https://github.com/capture0x/web-scanner/issues).
 
 ## License
 
