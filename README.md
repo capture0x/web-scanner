@@ -9,7 +9,6 @@ A comprehensive tool for **Web Domain Scanning** including Subdomain Discovery, 
 ## :camera: Screenshots :camera:
 
 <img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/1.png" width="45%"></img>
-<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/2.png" width="45%"></img>
 <img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/3.png" width="45%"></img>
 
 ## 👇 💫 How to Use 💫 👇
