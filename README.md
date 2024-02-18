@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/20.png" width="70%"></img>
 
-#### Developed by [Your Name or Organization]
+#### Developed by [tmrswrr]
 #### Version 1.0.0
 A comprehensive tool for **Web Domain Scanning** including Subdomain Discovery, Directory Enumeration, Network Scanning, and Website Identification.
 
@@ -14,7 +14,7 @@ A comprehensive tool for **Web Domain Scanning** including Subdomain Discovery, 
 
 ## 👇 💫 How to Use 💫 👇
 
-[![How to use](https://i.imgur.com/ybDgF57.png)](https://your-tutorial-link.com)
+[![How to use](https://i.imgur.com/ybDgF57.png)](https://youtu.be/Fx6FLDzuZ4c)
 
 ## 📒 Read Me 📒
 
