@@ -1,6 +1,6 @@
 # 🌐 &nbsp; Advanced Web Scanner Tool &nbsp; 🌐
 
-<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/20.png" width="70%"></img>
+<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/20.png" width="100%"></img>
 
 #### Developed by [tmrswrr]
 #### Version 1.0.0
@@ -8,9 +8,9 @@ A comprehensive tool for **Web Domain Scanning** including Subdomain Discovery, 
 
 ## :camera: Screenshots :camera:
 
-<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/1.png" width="32%"></img>
-<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/2.png" width="32%"></img>
-<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/3.png" width="32%"></img>
+<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/1.png" width="45%"></img>
+<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/2.png" width="45%"></img>
+<img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/3.png" width="45%"></img>
 
 ## 👇 💫 How to Use 💫 👇
 
