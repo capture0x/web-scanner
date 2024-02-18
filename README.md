@@ -33,6 +33,7 @@ git clone https://github.com/your-repo/Advanced-Web-Scanner/
 cd Advanced-Web-Scanner
 sudo ./setup.sh
 pip install -r requirements.txt
+```
 
 ## ⭐ Usage ⭐
 
@@ -40,6 +41,7 @@ To use the Advanced Web Scanner, follow these steps:
 
 ```bash
 python app.py
+```
 
 This command starts the Flask server and runs the web application. Access the web interface through your web browser to begin scanning.
 
