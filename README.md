@@ -14,7 +14,7 @@ A comprehensive tool for **Web Domain Scanning** including Subdomain Discovery, 
 
 ## 👇 💫 How to Use 💫 👇
 
-[![How to use](https://i.imgur.com/ybDgF57.png)](https://youtu.be/Fx6FLDzuZ4c)
+[![How to use](https://raw.githubusercontent.com/capture0x/web-scanner/main/19.png)](https://youtu.be/Fx6FLDzuZ4c)
 
 ## 📒 Read Me 📒
 
