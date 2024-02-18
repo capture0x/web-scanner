@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Vuln Scanner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/custom.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<style>
+body {
+    background-color: #1e1e2f; /* Deep blue background for a modern look */
+    color: #f5f5f5; /* Light grey font color for readability */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Sleek, modern font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.shining-button {
+    background: linear-gradient(135deg, #5a4fcf, #764ba2); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Increased border radius for a softer look */
+    padding: 14px 28px; /* Increased padding for larger buttons */
+    font-size: 20px; /* Increased font size */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.shining-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.shining-button:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.shining-button:hover {
+    background: linear-gradient(135deg, #483bb3, #5a4fcf); /* Darker shade of purple */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.shining-button span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Text shadow for better visibility */
+.shining-button span {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.modern-title {
+    font-size: 2.5rem;
+    color: #f5f5f5; /* Light grey font color */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 110px; /* Increased horizontal padding */
+    background-color: #29293d; /* Dark background for the title */
+    border: 3px solid #5a4fcf; /* Modern purple border */
+    box-shadow: 0 4px 8px rgba(90, 79, 207, 0.4); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: 600;
+    display: inline-block; /* Keeps the border tight around the text */
+}
+
+.search-field {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #5a4fcf; /* Modern purple */
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #29293d; /* Dark background for input field */
+    color: #f5f5f5; /* Light grey font color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-field:focus {
+    outline: none;
+    border-color: #483bb3; /* Darker purple */
+    box-shadow: 0 0 8px rgba(90, 79, 207, 0.6);
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.scan-output {
+    background-color: #29293d; /* Dark blue */
+    color: #f5f5f5; /* Light grey font color */
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    border: 1px solid #5a4fcf; /* Modern purple */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.scan-output:hover {
+    border-color: #483bb3; /* Darker purple */
+}
+
+.card-header {
+    background-color: #1e1e2f; /* Deep blue */
+    color: #f5f5f5; /* Light grey font color */
+    border-bottom: 3px solid #5a4fcf; /* Modern purple */
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+</style>
+
+
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 modern-title">Web Scanner</h1>
+        <form method="post" action="{{ url_for('index') }}">
+            <div class="form-group">
+                <label class="input-label" for="domain">Enter Domain</label>
+                <input type="text" class="form-control" name="domain" required>
+            </div>
+            <button type="submit" class="btn btn-primary shining-button" name="find_subdomains">Subdomains</button>
+            <button type="submit" class="btn btn-primary shining-button" name="find_directory">Directory</button>
+            <button type="submit" class="btn btn-primary shining-button" name="find_nmap">Nmap</button>
+            <button type="submit" class="btn btn-primary shining-button" name="what_url">WhatWeb</button>
+        </form>
+
+        {% if scan_output %}
+        <div class="mt-4 card">
+            <div class="card-header">
+                Scan Output:
+            </div>
+            <div class="card-body scan-output">
+                <p>{{ scan_output.replace('\n', ' ')|safe }}</p>
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</body>
+</html>
