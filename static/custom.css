@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #7e57c2; /* Purple */
+    --secondary-color: #b39ddb; /* Lighter purple */
+    --background-color: #2c2a4a; /* Dark purple */
+    --text-color: #e0d1f9; /* Soft purple */
+    --sub-text-color: #a094b7; /* Subtle purple */
+    --highlight-color: #c59cd4; /* Shining purple */
+    --font-family: 'Arial', sans-serif;
+}
+
+
+/* General styling */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Reset default styles for lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: var(--sub-text-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+/* Form styling */
+.form-group label {
+    color: var(--highlight-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    background-color: #333;
+    border: 1px solid var(--sub-text-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+}
+
+/* Button styling */
+.btn-primary {
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-shadow: 0px 0px 8px rgba(179, 157, 219, 0.6); /* Shining text effect */
+    box-shadow: 0px 2px 4px rgba(150, 123, 182, 0.4); /* Soft purple shadow */
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 12px rgba(179, 157, 219, 0.8); /* Enhanced shining effect on hover */
+}
+
+
+/* The rest of the CSS remains unchanged */
+
+
+/* Scan output styling */
+.scan-output {
+    background-color: #29274c;
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(150, 123, 182, 0.5);
+    margin-top: 20px;
+    border: 1px solid #3a3790;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    overflow-x: auto;
+}
+
+.scan-output-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--highlight-color);
+    text-shadow: 0px 0px 10px #b280ff;
+}
+
+.scan-output-keyword {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #b280ff;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container, .form-control, .btn-primary {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
