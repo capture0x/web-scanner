@@ -1,4 +1,4 @@
-# 🌐 &nbsp; Advanced Web Scanner Tool &nbsp; 🌐
+# 🌐 &nbsp; Web Scanner Tool &nbsp; 🌐
 
 <img src="https://raw.githubusercontent.com/capture0x/web-scanner/main/20.png" width="100%"></img>
 
