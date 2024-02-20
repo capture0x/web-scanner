@@ -28,8 +28,8 @@ A comprehensive tool for **Web Domain Scanning** including Subdomain Discovery, 
 ### Installation with setup.sh and requirements.txt
 
 ```bash
-git clone https://github.com/your-repo/Advanced-Web-Scanner/
-cd Advanced-Web-Scanner
+git clone https://github.com/capture0x/web-scanner.git
+cd web-scanner
 sudo ./setup.sh
 pip install -r requirements.txt
 ```
@@ -75,7 +75,7 @@ For bug reports or suggestions for enhancements, please open an [issue](https://
 
 ## License
 
-This project is licensed under [specify your license here].
+This project is licensed under [Apache 2.0](https://github.com/capture0x/web-scanner/blob/main/LICENSE).
 
 ## Disclaimer
 
