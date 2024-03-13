@@ -28,8 +28,8 @@ A comprehensive tool for **Web Domain Scanning** including Subdomain Discovery, 
 ### Installation with setup.sh and requirements.txt
 
 ```bash
-git clone https://github.com/your-repo/Advanced-Web-Scanner/
-cd Advanced-Web-Scanner
+git clone https://github.com/capture0x/web-scanner
+cd web-scanner
 sudo ./setup.sh
 pip install -r requirements.txt
 ```
