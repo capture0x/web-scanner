@@ -42,6 +42,12 @@ To use the Advanced Web Scanner, follow these steps:
 python app.py
 ```
 
+## ⭐ Usage With Docker ⭐
+```bash
+docker-compose build # build docker image
+docker-compose up -d # http://localhost:8000 -> accessable!
+```
+
 This command starts the Flask server and runs the web application. Access the web interface through your web browser to begin scanning.
 
 ## Features
